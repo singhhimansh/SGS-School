@@ -3,4 +3,4 @@ Website for the sgs school
 
 
 
-developed with love by Himanshu Singh 
+Handcrafted with love by Himanshu Singh
