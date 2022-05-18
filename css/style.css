@@ -262,6 +262,7 @@ header{
 /* Footer CSS */
 
 #footer {
+	background-color: #07b5b2;
     margin-left:auto;
     margin-right:auto;
     margin-top:2em;
@@ -356,3 +357,22 @@ header{
 .contact li a:hover {
 	background: #023a59;
 }
+
+#devname {
+
+	background-color: black; 
+	color: white;
+	
+
+}
+
+/* #devname img {
+
+	height: 34px;
+    /* text-decoration: none; */
+    width: auto;
+    /* align-items: center; */
+    /* align-self: center; */
+    position: relative;
+    
+} */
