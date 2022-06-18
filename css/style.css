@@ -24,7 +24,7 @@
 	display: flex;
 	flex: 1 1 25%;
     /* align-self: flex-start; */
-	height: 90px;
+	height: 120px;
     width: 30vw;
 }
 
@@ -36,38 +36,40 @@
 /* nevigation bar */
 
 #menu ul{
-	
+	padding-left: 0;
 	list-style: none;
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 	text-align: center;
 	background: #3679a2;
-	height: 90px;
+	
+	
 }
 
 #menu li {
 
 	/* flex: 1 1 20%; */
 	align-content: center;
-
+	
+	
 }
 	
 	
-#menu li a, #menu li span{
-	display: inline-block;
-	padding: 0em 1.5em;
+#menu li a {
+	/* display: inline-block; */
+	padding: 0em 1em;
+	margin: 0 0.5em ;
 	text-decoration: none;
 	font-weight: 600;
 	text-transform: uppercase;
 	line-height: 90px;
-}
-	
-#menu li a{
-		
 	color: rgb(233, 237, 241);
+	
 }
 	
-#menu li:hover a, #menu li span{
+	
+#menu li:hover {
 	
 	font-size: large;
 	background: rgb(110, 210, 238);
@@ -86,10 +88,12 @@
     padding: none;
 }
 
+
+/* 
 #image-text{
-    position: absolute;
-	font-size: 3em;
-    top: 30%;
+    position: relative;
+	font-size: 3rem;
+    top: 10%;
     left: 20%;
     font-family: sans-serif;
     color: rgba(114, 234, 255, 0.821);
@@ -100,8 +104,8 @@
 #image-subtext{
 	
 	width: 25%;
-	position: absolute;
-	font-size: 1em;
+	position: relative;
+	font-size: 1rem;
 	line-height: 1.5em;
     top: 45%;
     left: 20%;
@@ -110,7 +114,7 @@
     color: rgb(186, 255, 126);
     text-align: center;
     transform: translate(-30%,-30%);
-}
+} */
 
 
 #welcome{
@@ -127,7 +131,9 @@
 }
 
 #welcome p{
+	line-height: 30px;
 	margin-bottom: 40px;
+	padding: 0 10px;
 	text-align: center;
 }
 
@@ -189,6 +195,10 @@
 	text-align: center;
 
 }
+.row {
+	justify-content: center;
+}
+
 
 .row #column21,
 .row #column22,
@@ -234,13 +244,13 @@
 .footer-row{
 
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 
 }
 
 .company-details{
-	
-	overflow: hidden;
+
 	border-top: 20px solid rgba(86, 127, 204, 0.163);
 	background-color: #71aaff;
 	text-align: center;
@@ -262,7 +272,7 @@
 .footer-row #icon{
 	display: block;
 	margin-bottom: 1em;
-	font-size: 3em;
+	font-size: 1.5em;
 }
 
 

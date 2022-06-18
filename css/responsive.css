@@ -1,0 +1,29 @@
+@media only screen and (max-width: 940px) {
+  #logo{
+    display: flex;
+    justify-content: center;
+    
+      /* align-self: flex-start; */
+    height: 120px;
+    width: 100vw;
+  }
+  
+  #logo img{
+      float: left;
+      padding: 0px 0px;
+  }
+ 
+  #menu ul{
+    
+    list-style: none;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background: #3679a2;
+    
+    
+  }
+  }
