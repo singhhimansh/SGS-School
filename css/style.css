@@ -1,95 +1,57 @@
-html, body{
-	height: 100%;
-}
-	
 body{
 	margin: 0px;
 	padding: 0px;
 	background: #ffffff;
 	font-family: 'Roboto';
-	font-size: 12pt;
+	font-size: 4rem;
 }
 		
-h1, h2, h3{
-	margin: 0;
-	padding: 0;
-	color: #404040;
-}
-	
-p, ol, ul{
-	margin-top: 0;
-}
 
-p {
-	line-height: 180%;
-}
-
-ol, ul{
-	padding: 0;
-	list-style: none;
-}
-	
-.container{
-	/* Set width of container to
-		1200px and align center */
-	margin: 0px auto;
-	width: 1200px;
-}
-
-header{
-    overflow:hidden;
-
-}
 
 #top-header{
-    text-align: center;
-    height: 60px;
+	display: flex;
+	flex-wrap: wrap;
+
+	
 }
 
 #welcome{
-    overflow: hidden;
-    width: 1000px;
-    margin: 0px auto;
+    text-align: center;
 }
 
 
 #logo{
 	display: flex;
-    float: left;
-    padding: none;
-    margin: none;
-    height: 60px;
-    width: 30%;
+	flex: 1 1 25%;
+    /* align-self: flex-start; */
+	height: 90px;
+    width: 30vw;
 }
 
 #logo img{
-  
     float: left;
     padding: 0px 0px;
 }
 
 /* nevigation bar */
 
-#menu{
-	float: right;
-	width: 50%;
-	height: 100%;
-	margin: none;
-}
-	
 #menu ul{
+	
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
 	text-align: center;
-	float: right;
-	margin: none;
 	background: #3679a2;
+	height: 90px;
+}
+
+#menu li {
+
+	/* flex: 1 1 20%; */
+	align-content: center;
+
 }
 	
-#menu li{
-	
-	display: inline-block;
-	padding: none;
-	margin: none;
-}
 	
 #menu li a, #menu li span{
 	display: inline-block;
@@ -97,7 +59,7 @@ header{
 	text-decoration: none;
 	font-weight: 600;
 	text-transform: uppercase;
-	line-height: 60px;
+	line-height: 90px;
 }
 	
 #menu li a{
@@ -106,7 +68,7 @@ header{
 }
 	
 #menu li:hover a, #menu li span{
-	font-style: oblique;
+	
 	font-size: large;
 	background: rgb(110, 210, 238);
 	color: #373737;
@@ -366,13 +328,17 @@ header{
 
 }
 
-/* #devname img {
+
+/*
+#devname img {
 
 	height: 34px;
-    /* text-decoration: none; */
+    text-decoration: none; 
     width: auto;
-    /* align-items: center; */
-    /* align-self: center; */
-    position: relative;
+    align-items: center; 
+    align-self: center; 
+   position: relative;
     
-} */
+}
+
+*/
