@@ -1,10 +1,10 @@
-body{
+/* body{
 	margin: 0px;
 	padding: 0px;
 	background: #ffffff;
 	font-family: 'Roboto';
 	font-size: 4rem;
-}
+} */
 		
 
 
@@ -115,12 +115,12 @@ body{
 
 #welcome{
     overflow: hidden;
-    width: 1000px;
-	margin-top: 50px;
+	margin: 50px 50px;
     /* margin: 0 auto; */
 }
 
 #welcome .title{
+	font-size: 2rem;
     margin-top: 20px;
     padding: 20px;
     text-align: center;
