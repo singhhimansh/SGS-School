@@ -6,12 +6,16 @@ import reportWebVitals from './reportWebVitals';
 import './styles/tailwind.css';
 import 'animate.css';
 import Navbar from './Navbar';
+import Main  from "./Main";
+import Footer  from "./Footer";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Navbar />
     <Carousel />
+    <Main/>
+    <Footer/>
   </React.StrictMode>
 );
 

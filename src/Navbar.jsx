@@ -44,24 +44,24 @@ function Navbar() {
             <div id="listparentdiv"
               className="lg:visible navbar mr-4 shadow lg:shadow-none align-middle lg:flex lg:items-center lg:justify-between invisible z-[1] opacity-0 lg:opacity-100 transition-all ease-in-out duration-500">
               <div id="navbarlist"
-                className="w-full flex flex-col lg:flex-row items-center text-gray-800 lg:bg-none border-opacity-100 border-y-2 border-slate-600 border-solid lg:border-none lg:z-auto lg:static absolute left-0 divide-y divide-opacity-60 divide-slate-400 lg:divide-none lg:w-auto lg:py-0 py-4 lg:pl-0 pl-7 top-[100px]">
+                className="w-full flex flex-col text-lg lg:flex-row items-center text-gray-800 lg:bg-none border-opacity-100 border-y-2 border-slate-600 border-solid lg:border-none lg:z-auto lg:static absolute left-0 divide-y divide-opacity-60 divide-slate-400 lg:divide-none lg:w-auto lg:py-0 py-4 lg:pl-0 pl-7 top-[100px]">
                 
-                <a href="#" className="m-1 px-5 py-2 capitalize  hover:bg-sky-300 rounded  hover:text-sky-800 moveup duration-300" target="_blank" rel="noopener noreferrer">home</a>
+                <a href="." className="m-1 px-5 py-2 capitalize  hover:bg-sky-300 rounded  hover:text-sky-800 moveup duration-300" target="_parent" rel="noopener noreferrer">home</a>
               
               
-                <a href="#" className="m-1 px-5 py-2 capitalize  hover:bg-sky-300 rounded  hover:text-sky-800 moveup duration-300" target="_blank" rel="noopener noreferrer">
+                <a href="#facilities" className="m-1 px-5 py-2 capitalize  hover:bg-sky-300 rounded  hover:text-sky-800 moveup duration-300" target="_parent" rel="noopener noreferrer">
                   facilities</a>
               
               
-                <a href="#" className="m-1 px-5 py-2 capitalize  hover:bg-sky-300 rounded  hover:text-sky-800 moveup duration-300" target="_blank" rel="noopener noreferrer">
+                <a href="#faculty" className="m-1 px-5 py-2 capitalize  hover:bg-sky-300 rounded  hover:text-sky-800 moveup duration-300" target="_parent"  rel="noopener noreferrer">
                   faculty</a>
               
               
-                <a href="#" className="m-1 px-5 py-2 capitalize  hover:bg-sky-300 rounded  hover:text-sky-800 moveup duration-300" target="_blank" rel="noopener noreferrer">
+                <a href="#fees" className="m-1 px-5 py-2 capitalize  hover:bg-sky-300 rounded  hover:text-sky-800 moveup duration-300" target="_parent" rel="noopener noreferrer">
                   fees</a>
               
               
-                <a href='.' className="m-1 px-5 py-2 capitalize  hover:bg-sky-300 rounded  hover:text-sky-800 moveup duration-300" target="_blank" rel="noopener noreferrer">contact us</a>
+                <a href='#contact' className="m-1 px-5 py-2 capitalize  hover:bg-sky-300 rounded  hover:text-sky-800 moveup duration-300" target="_parent"  rel="noopener noreferrer">contact us</a>
                 
               </div>
             </div>
