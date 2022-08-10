@@ -2,9 +2,10 @@
 
 function Main() {
 
-    return(
+    return (
         <div className="flex justify-center">
             <div className="container w-11/12 flex flex-col items-center">
+                {/* welcome to sgs school */}
                 <section className="welcome w-2/3 my-5 text-center select-none " >
                     <h1 className="text-3xl mb-9 font-serif font-semibold tracking-wider text-sky-800 ">Welcome to S.G.S School</h1>
                     <p className="leading-7">The role of private educational institutions to make the goal of universalisation of education possible has since been commended across the board by all. Establishing schools, in fact, has been the top charitable activity in indian society since time immemorial.  <span className="font-semibold">Shri. Gangadhar Singh</span> of Village Lalgarhi in District Aligarh was a philanthrophic personality who often felt the need of a school for uplift of the rural folks. He nurtured a dream which was ultimately fulfilled by his worthy grandson <span className="font-semibold">Shri. Amar Singh</span> in year 2002.</p>
@@ -14,9 +15,54 @@ function Main() {
 
                 <hr className="w-3/4 h-0.5 my-16 bg-slate-200" />
 
+
+
+                {/* faculty */}
+                <section id="faculty" className="my-5 w-2/3 flex-initial flex flex-col ">
+                    <h1 className="my-2 text-center  text-2xl font-medium tracking-wider">Faculty</h1>
+                    {/* facilities card */}
+                    <div className="p-4 m-3 rounded-md flex gap-6 border-2 border-gray-200 hover:drop-shadow-lg duration-150 ">
+                        <img src={require('./images/director.jpg')} className='h-40 object-cover rounded-md' alt="" />
+                        <div className='flex flex-col justify-evenly text-slate-700 '>
+                            <div>
+                                <h1 className="capitalize text-lg font-medium">Shri. Amar Singh</h1>
+                                <h1 className=" text-base font-medium">Director</h1>
+                            </div>
+                            <p className=" text-sm ">Every child is like a seed which has the potential to grow if it is nourished with love and care under the right guidance.</p>
+                            <p className="italic text-sm">"The only place where success comes before work is in the dictionary."</p>
+                        </div>
+                    </div>
+                    <div className="p-4 m-3 rounded-md flex flex-row-reverse gap-6 border-2 border-gray-200 hover:drop-shadow-lg duration-150 ">
+                        <img src={require('./images/principal.jpeg')} className='h-40 object-cover rounded-md' alt="" />
+                        <div className='flex flex-col justify-evenly text-end  text-slate-700 '>
+                            <div>
+                                <h1 className="capitalize text-lg font-medium">Shri. Rajesh Kumar</h1>
+                                <h1 className=" text-base font-medium">Principal</h1>
+                            </div>
+                            <p className=" text-sm ">Childhood is the best time to lay the foundation of the core values essential for the overall development of the future citizen of tomorrow.</p>
+                            <p className="italic text-sm">"One must not stop till he reach his destination"</p>
+                        </div>
+                    </div>
+                    <div className="p-4 m-3  rounded-md flex  gap-6 border-2 border-gray-200 hover:drop-shadow-lg duration-150 ">
+                        <img src={require('./images/coordinator.jpeg')} className='h-40 object-cover rounded-md' alt="" />
+                        <div className='flex flex-col justify-evenly  text-slate-700 '>
+                            <div>
+                                <h1 className="capitalize text-lg font-medium">Shri. Rampal Singh</h1>
+                                <h1 className="capitalize text-base font-medium ">Coordinator</h1>
+                            </div>
+                            <p className="text-sm">It's essential that children shouldn't only excel in academics but also develop courtesy, discipline, social sensitivity and traditional & cultural values. </p>
+                            <p className="italic text-sm">"Hardwork never goes in vein"</p>
+                        </div>
+                    </div>
+
+                </section>
+
+                <hr className="w-3/4 h-0.5 my-16 bg-slate-200" />
+
+                {/* facilities */}
                 <section id='facilities' className="facility w-4/5 my-5 ">
                     <h1 className="my-2 text-center text-2xl font-medium tracking-wider">Facilities</h1>
-                    <div className="flex flex-wrap m-4 justify-center">
+                    <div className="flex flex-wrap m-4 mb-16 justify-center">
                         {/* facilities card */}
                         <div className="w-72 p-4 m-3 bg-slate-50 border-2 hover:shadow-md shadow-gray-200 border-gray-100 rounded-md hover:scale-105 hover:shadow-sky-200 duration-100">
                             <img src={require('./images/laboratory.jpg')} className='h-40 w-full object-cover rounded-md' alt="" />
@@ -44,27 +90,6 @@ function Main() {
                             <p className="mx-3 mb-5 text-sm text-center">Personal vehicle stand for student cycles and bikes.</p>
                         </div>
 
-                    </div>
-                </section>
-
-                <hr className="w-3/4 h-0.5 my-16 bg-slate-200" />
-
-                <section id="faculty" className="my-5">
-                    <h1 className="my-2 text-center text-2xl font-medium tracking-wider">Faculty</h1>
-                    <div className="flex flex-wrap m-4 justify-evenly">
-                        {/* facilities card */}
-                        <div className="w-56 p-4 m-3 rounded-md ">
-                            <img src={require('./images/principal.jpeg')} className='h-40 w-full object-cover rounded-md' alt="" />
-                            <h1 className="mt-4 text-center capitalize text-lg font-medium">Shri. Rajesh Kumar</h1>
-                            <h1 className="mb-3 text-center capitalize text-base font-normal">Principal</h1>
-                            <p className="mx-3 mb-5 italic text-sm text-center">"One must not stop till he reach his destination"</p>
-                        </div>
-                        <div className="w-56 p-4 m-3 rounded-md ">
-                            <img src={require('./images/coordinator.jpeg')} className='h-40 w-full object-cover rounded-md' alt="" />
-                            <h1 className="mt-4 text-center capitalize text-lg font-medium">Shri. Rampal Singh</h1>
-                            <h1 className="mb-3 text-center capitalize text-base font-normal">Coordinator</h1>
-                            <p className="mx-3 mb-5 italic text-sm text-center" >"Hardwork never goes in vein"</p>
-                        </div>
                     </div>
                 </section>
 

@@ -4,7 +4,7 @@ import {ImLocation2} from 'react-icons/im';
 
 function Footer() {
     return ( 
-        <div id='contact' className="bg-sky-300/70 flex flex-col justify-center border-t-2 border-sky-400/40  text-sm ">
+        <div id='contact' className="w-full bg-sky-300/70 flex flex-col justify-center border-t-2 border-sky-400/40  text-sm ">
             <div className="p-16 flex justify-center">
                 <div className="w-11/12 text-gray-800 flex flex-wrap justify-evenly items-center">
                     <div className='flex flex-nowrap items-center gap-4'>
