@@ -54,7 +54,7 @@ function Navbar() {
               
               
                 <a href="#faculty" className="m-1 px-5 py-2 capitalize  hover:bg-sky-300 rounded  hover:text-sky-800 moveup duration-300" target="_parent"  rel="noopener noreferrer">
-                  faculty</a>
+                  our team</a>
               
               
                 <a href="#fees" className="m-1 px-5 py-2 capitalize  hover:bg-sky-300 rounded  hover:text-sky-800 moveup duration-300" target="_parent" rel="noopener noreferrer">
