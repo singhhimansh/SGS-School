@@ -15,13 +15,10 @@ root.render(
   <Router>
     <React.StrictMode>
       <Navbar />
-
       <Routes>
-        <Route exact path="/main" element={<Main/>}/>
-          
+        <Route exact path="/" element={<Main/>}/>
         <Route exact path="/events" element={<Events />}/>
       </Routes>
-
       <Footer/>
     </React.StrictMode>
   </Router>

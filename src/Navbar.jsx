@@ -32,7 +32,7 @@ function Navbar() {
           <div className="flex justify-between items-center">
             {/* logo  */}
             <div className="flex flex-1 items-center justify-between">
-              <Link to="/main" className="mx-2 sm:mx-6 flex flex-nowrap items-center gap-3 md:gap-6 " rel="noopener noreferrer">
+              <Link to="/" className="mx-2 sm:mx-6 flex flex-nowrap items-center gap-3 md:gap-6 " rel="noopener noreferrer">
                 <img src={logo}
                   alt="SGS school" className="w-14 sm:w-16 inline-block" srcSet="" /> 
                 <span className='flex flex-col text-center text-sky-800'> 
@@ -51,12 +51,12 @@ function Navbar() {
                 className="hidden mr-7 font-calibre  text-lightslate xl:flex gap-3 justify-center items-center
                 text-lg text-gray-800">
                 
-                <Link to="/main" className="m-1 px-5 py-2 capitalize  hover:bg-sky-300 rounded  hover:text-sky-800 moveup duration-300" rel="noopener noreferrer">home</Link>
+                <Link to="/" className="m-1 px-5 py-2 capitalize  hover:bg-sky-300 rounded  hover:text-sky-800 moveup duration-300" rel="noopener noreferrer">home</Link>
               
-                <Link to="/main#faculty" className="m-1 px-5 py-2 capitalize  hover:bg-sky-300 rounded  hover:text-sky-800 moveup duration-300" target="_parent"  rel="noopener noreferrer">
+                <Link to="/#faculty" className="m-1 px-5 py-2 capitalize  hover:bg-sky-300 rounded  hover:text-sky-800 moveup duration-300" target="_parent"  rel="noopener noreferrer">
                   our team</Link>
               
-                <Link to="/main#facilities" className="m-1 px-5 py-2 capitalize  hover:bg-sky-300 rounded  hover:text-sky-800 moveup duration-300" target="_parent" rel="noopener noreferrer">
+                <Link to="/#facilities" className="m-1 px-5 py-2 capitalize  hover:bg-sky-300 rounded  hover:text-sky-800 moveup duration-300" target="_parent" rel="noopener noreferrer">
                   facilities</Link>
               
               
@@ -66,7 +66,7 @@ function Navbar() {
                   Events</Link>
               
               
-                <Link to='/main#contact' className="m-1 px-5 py-2 capitalize  hover:bg-sky-300 rounded  hover:text-sky-800 moveup duration-300" target="_parent"  rel="noopener noreferrer">contact us</Link>
+                <Link to='/#contact' className="m-1 px-5 py-2 capitalize  hover:bg-sky-300 rounded  hover:text-sky-800 moveup duration-300" target="_parent"  rel="noopener noreferrer">contact us</Link>
                 
               </div>
 
@@ -84,12 +84,12 @@ function Navbar() {
 
                 <div className={`h-screen lg:hidden fixed z-10  font-calibre text-slate-50  bg-sky-400/70 border-l border-l-lightestnavy/80 flex flex-col justify-center items-center  gap-10   ${ hambState==='close'? 'hidden top-0 right-0 ' : 'w-2/3  top-0 right-0 touch-none duration-200 ease-in-out transition-all' } `}>
                 
-                  <Link to="/main" className="m-1 px-5 py-2 capitalize  hover:bg-sky-300 rounded  hover:text-sky-800 moveup duration-300" rel="noopener noreferrer" onClick={()=> setHambState('close')} >home</Link>
+                  <Link to="/" className="m-1 px-5 py-2 capitalize  hover:bg-sky-300 rounded  hover:text-sky-800 moveup duration-300" rel="noopener noreferrer" onClick={()=> setHambState('close')} >home</Link>
                 
-                  <Link to="/main#faculty" className="m-1 px-5 py-2 capitalize  hover:bg-sky-300 rounded  hover:text-sky-800 moveup duration-300" target="_parent"  rel="noopener noreferrer" onClick={()=> setHambState('close')}>
+                  <Link to="/#faculty" className="m-1 px-5 py-2 capitalize  hover:bg-sky-300 rounded  hover:text-sky-800 moveup duration-300" target="_parent"  rel="noopener noreferrer" onClick={()=> setHambState('close')}>
                     our team</Link>
                 
-                  <Link to="/main#facilities" className="m-1 px-5 py-2 capitalize  hover:bg-sky-300 rounded  hover:text-sky-800 moveup duration-300" target="_parent" rel="noopener noreferrer" onClick={()=> setHambState('close')}>
+                  <Link to="/#facilities" className="m-1 px-5 py-2 capitalize  hover:bg-sky-300 rounded  hover:text-sky-800 moveup duration-300" target="_parent" rel="noopener noreferrer" onClick={()=> setHambState('close')}>
                     facilities</Link>
                 
                 
@@ -99,7 +99,7 @@ function Navbar() {
                     Events</Link>
                 
                 
-                  <Link to='/main#contact' className="m-1 px-5 py-2 capitalize  hover:bg-sky-300 rounded  hover:text-sky-800 moveup duration-300" target="_parent"  rel="noopener noreferrer" onClick={()=> setHambState('close')}>contact us</Link>
+                  <Link to='/#contact' className="m-1 px-5 py-2 capitalize  hover:bg-sky-300 rounded  hover:text-sky-800 moveup duration-300" target="_parent"  rel="noopener noreferrer" onClick={()=> setHambState('close')}>contact us</Link>
 
                 </div>
                 
