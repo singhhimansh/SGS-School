@@ -77,7 +77,7 @@ function Navbar() {
                 className="align-middle md:flex md:items-center  transition-all ease-in-out duration-500
                 text-lg text-gray-800">
 
-                <button name='hambtn' title='menu' id="hambtn" className={`relative text-3xl cursor-pointer mx-2 md:hidden block ${ hambState==='close'? '' : 'z-20 ' }`} onClick={(e)=>handleMenu(e)}>
+                <button name='hambtn' title='menu' id="hambtn" className={`relative text-3xl cursor-pointer mx-2 xl:hidden block ${ hambState==='close'? '' : 'z-20 ' }`} onClick={(e)=>handleMenu(e)}>
                   <CgMenuRight className={`w-9 h-9 ${ hambState==='close'? 'stroke-slate-400' : 'hidden' }`}/>
                   <IoClose className={` w-9 h-9  stroke-1 ${ hambState==='close'? 'hidden ' : 'fill-slate-600/80 animate__animated animate__rotateIn animate__faster' }`}/>
                 </button>

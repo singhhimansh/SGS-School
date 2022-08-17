@@ -10,7 +10,7 @@ function Main() {
     return (
         <>
         <Carousel />
-        <div className="flex -z-20 justify-center">
+        <div className="flex  justify-center">
             <div className="container w-11/12 flex flex-col items-center">
                 {/* welcome to sgs school */}
                 <section className="welcome mx-px sm:w-2/3 my-5 text-justify  md:text-center  animate__animated animate__fadeIn " >
