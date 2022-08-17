@@ -2,72 +2,113 @@ import logo from './images/logo.png';
 // import resume from './Himanshu_Singh.pdf'
 
 import React, { useState } from 'react'
+import {Link} from 'react-router-dom';
+import {CgMenuRight} from 'react-icons/cg';
+import {IoClose} from 'react-icons/io5';
+
+
+
 
 function Navbar() {
 
+  const [hambState, setHambState] = useState('close');
 
-    const hambergur =(e)=>{
-      console.log(e)
-      e.name === 'menu' ? (e.name='menuclose') : (e.name='menu')
+  const handleMenu = (e)=>{
+    e.preventDefault();
+    console.log(e)
+    console.log(e.target.id);
+    console.log('hamstate',  hambState);
+    hambState === 'close' ? setHambState('open') : setHambState('close');
+    
+  }
 
-      
-    }
+
 
 
 
     return (
-      <div className="navbar animate__animated animate__fadeInDown animate__faster py-4  sm:px-5 bg-sky-200 border-b-2 border-sky-300 shadow-md shadow-sky-200/60">
-          <div className="flex justify-between">
+    
+      <section className="navbar animate__animated animate__fadeInDown animate__faster py-4  sm:px-5 bg-sky-200 border-b-2 border-sky-300 shadow-md shadow-sky-200/60">
+          <div className="flex justify-between items-center">
             {/* logo  */}
             <div className="flex flex-1 items-center justify-between">
-              <a href="." className="mx-2 sm:mx-6 flex flex-nowrap items-center gap-3 md:gap-6 " target="_parent" rel="noopener noreferrer">
+              <Link to="/main" className="mx-2 sm:mx-6 flex flex-nowrap items-center gap-3 md:gap-6 " rel="noopener noreferrer">
                 <img src={logo}
                   alt="SGS school" className="w-14 sm:w-16 inline-block" srcSet="" /> 
                 <span className='flex flex-col text-center text-sky-800'> 
                   <p className="uppercase text-lg sm:text-xl lg:text-2xl  font-serif font-extrabold tracking-widest ">S.G.S INTER COLLEGE</p>
-                  <p className="capitalize text-xs sm:text-sm font-serif font-semibold tracking-widest">lalgari jagmohanpur </p>
+                  <p className="capitalize text-xs sm:text-sm font-serif font-semibold tracking-widest">lalgarhi jagmohanpur </p>
                 </span>
-                  {/* <img className='w-1/3 ml-3 inline-block fill-slate-500' src={require('./images/sgsname.png')} alt="name" srcset="" /></a> */}
-              </a>
-
-              <button className="text-3xl cursor-pointer  lg:hidden block" onClick={(e)=>hambergur(e)}>
-                {/* <!-- <ion-icon ></ion-icon> --> */}
-                <svg name="menu" id="hamburgerSVG"  className="fill-slate-500 w-5 sm:w-7 hover:fill-sky-400"
-                  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                  <path
-                    d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z" />
-                </svg>
-              </button>
+                
+              </Link>
             </div>
 
             {/* <!-- navbar on right side --> */}
-            <div id="listparentdiv"
-              className="lg:visible navbar mr-4 shadow lg:shadow-none align-middle lg:flex lg:items-center lg:justify-between invisible z-[1] opacity-0 lg:opacity-100 transition-all ease-in-out duration-500">
-              <div id="navbarlist"
-                className="w-full flex flex-col text-lg lg:flex-row items-center text-gray-800 lg:bg-none border-opacity-100 border-y-2 border-slate-600 border-solid lg:border-none lg:z-auto lg:static absolute left-0 divide-y divide-opacity-60 divide-slate-400 lg:divide-none lg:w-auto lg:py-0 py-4 lg:pl-0 pl-7 top-[100px]">
+
+            <div>
+              {/*menu for pc */}
+              <div id="menuForPC"
+                className="hidden mr-7 font-calibre  text-lightslate xl:flex gap-3 justify-center items-center
+                text-lg text-gray-800">
                 
-                <a href="." className="m-1 px-5 py-2 capitalize  hover:bg-sky-300 rounded  hover:text-sky-800 moveup duration-300" target="_parent" rel="noopener noreferrer">home</a>
+                <Link to="/main" className="m-1 px-5 py-2 capitalize  hover:bg-sky-300 rounded  hover:text-sky-800 moveup duration-300" rel="noopener noreferrer">home</Link>
+              
+                <Link to="/main#faculty" className="m-1 px-5 py-2 capitalize  hover:bg-sky-300 rounded  hover:text-sky-800 moveup duration-300" target="_parent"  rel="noopener noreferrer">
+                  our team</Link>
+              
+                <Link to="/main#facilities" className="m-1 px-5 py-2 capitalize  hover:bg-sky-300 rounded  hover:text-sky-800 moveup duration-300" target="_parent" rel="noopener noreferrer">
+                  facilities</Link>
               
               
-                <a href="#facilities" className="m-1 px-5 py-2 capitalize  hover:bg-sky-300 rounded  hover:text-sky-800 moveup duration-300" target="_parent" rel="noopener noreferrer">
-                  facilities</a>
               
               
-                <a href="#faculty" className="m-1 px-5 py-2 capitalize  hover:bg-sky-300 rounded  hover:text-sky-800 moveup duration-300" target="_parent"  rel="noopener noreferrer">
-                  our team</a>
+                <Link to="/events" className="m-1 px-5 py-2 capitalize  hover:bg-sky-300 rounded  hover:text-sky-800 moveup duration-300" rel="noopener noreferrer">
+                  Events</Link>
               
               
-                <a href="#fees" className="m-1 px-5 py-2 capitalize  hover:bg-sky-300 rounded  hover:text-sky-800 moveup duration-300" target="_parent" rel="noopener noreferrer">
-                  fees</a>
-              
-              
-                <a href='#contact' className="m-1 px-5 py-2 capitalize  hover:bg-sky-300 rounded  hover:text-sky-800 moveup duration-300" target="_parent"  rel="noopener noreferrer">contact us</a>
+                <Link to='/main#contact' className="m-1 px-5 py-2 capitalize  hover:bg-sky-300 rounded  hover:text-sky-800 moveup duration-300" target="_parent"  rel="noopener noreferrer">contact us</Link>
+                
+              </div>
+
+
+              {/* menu for phone */}
+
+              <div id=""
+                className="align-middle md:flex md:items-center  transition-all ease-in-out duration-500
+                text-lg text-gray-800">
+
+                <button name='hambtn' title='menu' id="hambtn" className={`relative text-3xl cursor-pointer mx-2 md:hidden block ${ hambState==='close'? '' : 'z-20 ' }`} onClick={(e)=>handleMenu(e)}>
+                  <CgMenuRight className={`w-9 h-9 ${ hambState==='close'? 'stroke-slate-400' : 'hidden' }`}/>
+                  <IoClose className={` w-9 h-9  stroke-1 ${ hambState==='close'? 'hidden ' : 'fill-slate-600/80 animate__animated animate__rotateIn animate__faster' }`}/>
+                </button>
+
+                <div className={`h-screen lg:hidden fixed z-10  font-calibre text-slate-50  bg-sky-400/70 border-l border-l-lightestnavy/80 flex flex-col justify-center items-center  gap-10   ${ hambState==='close'? 'hidden top-0 right-0 ' : 'w-2/3  top-0 right-0 touch-none duration-200 ease-in-out transition-all' } `}>
+                
+                  <Link to="/main" className="m-1 px-5 py-2 capitalize  hover:bg-sky-300 rounded  hover:text-sky-800 moveup duration-300" rel="noopener noreferrer" onClick={()=> setHambState('close')} >home</Link>
+                
+                  <Link to="/main#faculty" className="m-1 px-5 py-2 capitalize  hover:bg-sky-300 rounded  hover:text-sky-800 moveup duration-300" target="_parent"  rel="noopener noreferrer" onClick={()=> setHambState('close')}>
+                    our team</Link>
+                
+                  <Link to="/main#facilities" className="m-1 px-5 py-2 capitalize  hover:bg-sky-300 rounded  hover:text-sky-800 moveup duration-300" target="_parent" rel="noopener noreferrer" onClick={()=> setHambState('close')}>
+                    facilities</Link>
+                
+                
+                
+                
+                  <Link to="/events" className="m-1 px-5 py-2 capitalize  hover:bg-sky-300 rounded  hover:text-sky-800 moveup duration-300" rel="noopener noreferrer" onClick={()=> setHambState('close')}>
+                    Events</Link>
+                
+                
+                  <Link to='/main#contact' className="m-1 px-5 py-2 capitalize  hover:bg-sky-300 rounded  hover:text-sky-800 moveup duration-300" target="_parent"  rel="noopener noreferrer" onClick={()=> setHambState('close')}>contact us</Link>
+
+                </div>
                 
               </div>
             </div>
           </div>
-      </div>
+      </section>
+
     );
-  }
+}
 
 export default Navbar;
