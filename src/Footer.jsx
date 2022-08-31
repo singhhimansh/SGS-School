@@ -23,7 +23,7 @@ function Footer() {
             </div>
             <div className='p-4 bg-slate-800 text-sky-200   border-t-4 border-slate-600/90 flex justify-evenly'>
                 <h1 className=""><FaRegCopyright className='inline'/> All rights reserved | S.G.S School</h1>
-                <h1 className="">Built with <HiHeart className='inline fill-red-500'/> by <a href="https://singhhimansh.github.io/" className='hover:text-emerald-300 duration-150' target='_blank'>Himanshu Singh</a></h1>
+                <h1 className="">Built with <HiHeart className='inline fill-red-500'/> by <a href="https://himanshusingh.site/" className='hover:text-emerald-300 duration-150' target='_blank'>Himanshu Singh</a></h1>
             </div>
         </div>
     );
