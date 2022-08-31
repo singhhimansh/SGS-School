@@ -1,5 +1,5 @@
 
-# <img src="./images/logo.png" width="30px" /> SGS School
+# <img src="./src/images/logo.png" width="30px" /> SGS School
 #### A responsive school website developed with React.js, TailwindCSS and AnimateCSS.
 
 
@@ -14,7 +14,7 @@
 
 Desktop           |  Mobile              
 :-------------------------:|:-------------------------:
-![](./images/sgspc.png)  |  ![](./images/sgsmob.png) 
+![](./src/images/sgspc.png)  |  ![](./src/images/sgsmob.png) 
 
 
 #### **_Designed & Developed by  Himanshu Singh_**
