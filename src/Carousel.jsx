@@ -36,8 +36,8 @@ function Carousel() {
 
   return (
   
-    <div className="Carousel h-52 sm:h-[350px]  lg:h-[490px] relative my-5 md:my-8 mx-2  flex justify-center touch-pan-x animate__animated  animate__fadeIn">
-        <button  title='previous' onClick={()=>handleBackward()} className='z-10 px-3 h-full absolute top-0 left-0 hover:bg-gray-500/30' ><MdArrowBackIos className='w-10 h-10 hover:scale-125 fill-white opacity-1 hover:fill-yellow-200' /></button>
+    <section className="Carousel w-full bg-red-200 h-52 sm:h-[350px]  lg:h-[490px] relative my-5 md:my-8 mx-2  flex justify-center touch-pan-x animate__animated  animate__fadeIn">
+        <button  title='previous' onClick={()=>handleBackward()} className='z-10 px-3 h-full absolute top-0 left-0 hover:bg-gray-500/10' ><MdArrowBackIos className='w-10 h-10 hover:scale-125 fill-white opacity-1 hover:fill-yellow-200' /></button>
         {/* <img className=' snap-center w-full h-full object-cover rounded-md ' src={require("./images/slider/slider1.jpeg")} alt="slider" srcset="" /> */}
         <div className=''>
         
@@ -51,8 +51,8 @@ function Carousel() {
         </div>
 
 
-        <button title='next' className='absolute  px-3  h-full top-0 right-0 hover:bg-gray-500/30' onClick={(slideForward)=> handleForward(slideForward) } ><MdArrowForwardIos className='w-10 h-10 hover:scale-125  fill-white opacity-1 hover:fill-yellow-200'/></button>
-    </div>
+        <button title='next' className='absolute  px-3  h-full top-0 right-0 hover:bg-gray-500/10' onClick={(slideForward)=> handleForward(slideForward) } ><MdArrowForwardIos className='w-10 h-10 hover:scale-125  fill-white opacity-1 hover:fill-yellow-200'/></button>
+    </section>
     
   );
 }

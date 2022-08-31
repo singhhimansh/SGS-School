@@ -3,15 +3,14 @@ import Carousel from './Carousel';
 
 
 
-function Main() {
-
+function Main({setHambState, hambState}) {
 
 
     return (
-        <>
-        <Carousel />
-        <div className="flex  justify-center">
-            <div className="container w-11/12 flex flex-col items-center">
+        <main className={`relative ${ hambState==='close'? '' : '-z-10 blur-sm' }  `}>
+        <div className="flex justify-center">
+            <div className='container w-11/12 flex flex-col items-center'>
+                <Carousel />
                 {/* welcome to sgs school */}
                 <section className="welcome mx-px sm:w-2/3 my-5 text-justify  md:text-center  animate__animated animate__fadeIn " >
                     <h1 className="text-xl md:text-3xl mb-4 md:mb-9 font-serif text-center font-semibold tracking-wider text-sky-800 ">Welcome to S.G.S School</h1>
@@ -97,7 +96,7 @@ function Main() {
 
             </div>
         </div>
-        </>
+        </main>
     );
 
 }
