@@ -17,4 +17,4 @@ Desktop           |  Mobile
 ![](./src/images/sgspc.png)  |  ![](./src/images/sgsmob.png) 
 
 
-#### **_Designed & Developed by  Himanshu Singh_**
+#### **_Designed & developed by  Himanshu Singh_**
