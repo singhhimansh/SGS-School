@@ -4,7 +4,8 @@
 
 
 ## Features
-
+ - Admin login
+ - Upload images and videos of events
  - Carousel and Events Gallery to show pictures.
  - Display information related to the institute which includes management team, infrastructure, contact details and other.
  - Responsive to all display sizes.
